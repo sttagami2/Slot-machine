@@ -46,6 +46,18 @@
         this.spin();
       }, 50);
     }
+
+    isUnmatched(p1) {
+      if (this.img.src !== p1.img.src) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    
+    unmatch() {
+      this.img.classList.add('unmatched');
+    }
   }
 
   function checkResult() {
